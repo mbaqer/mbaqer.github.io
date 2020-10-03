@@ -272,6 +272,28 @@
       src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
       unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
     }
+
+    pre {
+      display: block;
+      padding: 9.5px;
+      margin: 0 0 10px;
+      font-size: 13px;
+      line-height: 1.42857143;
+      color: #333;
+      word-break: break-all;
+      word-wrap: break-word;
+      background-color: #f5f5f5;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .modal-dialog {
+      padding: 0px;
+      border-radius: 6px;
+      margin: 30px auto;
+      right: 0;
+      left: 0;
+    }
   </style>
   <link rel="stylesheet" type="text/css"
     href="https://ssl.gstatic.com/sites/p/f57c85/system/app/themes/ski/standard-css-ski-ltr-ltr.css" />
@@ -294,8 +316,8 @@
     <div id="sites-chrome-everything" class="">
       <div id="sites-chrome-page-wrapper" style="direction: ltr">
         <div id="sites-chrome-page-wrapper-inside">
-          <div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
-            <table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+          <div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper">
+            <table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0">
               <tr class="sites-header-primary-row" id="sites-chrome-userheader">
               </tr>
               <tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
@@ -347,11 +369,11 @@
                                   <div><span style="background-color:transparent;line-height:24px">
                                       <font color="#0b5394" face="verdana, sans-serif" size="3">
 
-                                        <b><u><a
-                                              href="https://scholar.google.com/citations?hl=en&user=VijQVZYAAAAJ&view_op=list_works&sortby=pubdate"
-                                              target="_blank">
-                                              Google Scholar Citations
-                                            </a></u></b></font>
+                                        <b><a
+                                            href="https://scholar.google.com/citations?hl=en&user=VijQVZYAAAAJ&view_op=list_works&sortby=pubdate"
+                                            target="_blank">
+                                            Google Scholar Citations
+                                          </a></b></font>
                                     </span></div>
 
                                   <div style="color:rgb(0,0,0);font-size:small;line-height:21px">
@@ -374,63 +396,21 @@
                                               </span>
                                             </font>
                                           </div>
-                                    
-                                    
-                                    
+
+
+
                                           <ul align="justify">
 
                                             <font color="#000000" face="verdana, sans-serif" size="2">
-                                             Upcoming 
+                                              Upcoming
                                             </font>
                                           </ul>
-                                    
-                                    
 
-                <!--                               
-                               
-                                  <ul align="justify">
-                                                                                       
-                                    <div
-                                      style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
-                                      <div class="font-weight-bold">[1]</div>
-                                      <div class="pl-3">
-                                        M.B. Mollah, J. Zhao, D. Niyato, Y.L. Guan, C. Yuen, S. Sun, K.-Y. Lam, and L.H. Koh, "Blockchain for the
-                                        Internet of Vehicles towards Intelligent Transportation Systems: A Survey”,
-                                        <i>arXiv preprint arXiv:2007.06022, 2020</i>
-                                        </br>
-                                        <a href="https://arxiv.org/abs/2007.06022" target="_blank"
-                                          rel="nofollow">arXiv</a>
-                                        &ensp;
-                                        <a href="https://www.researchgate.net/publication/342915891_Blockchain_for_the_Internet_of_Vehicles_towards_Intelligent_Transportation_Systems_A_Survey"
-                                          target="_blank" rel="nofollow">PDF</a>
-                                        <a class="pl-2" data-toggle="collapse" href="#collapse4" role="button"
-                                          aria-expanded="false">
-                                          bibtex<span><i class="pl-1 fas fa-caret-down"></i></span>
-                                        </a>
 
-                                        <div class="collapse" id="collapse4">
-                                          <div class="card card-body" style="font-family: monaco, monospace; font-size: 1rem; background-color:
-                                            #f5f5f5;border: 1px solid #e3e3e3;">
-                                            <pre class="toggle-text">
-@article{mollah2020blockchainiov,
-  title={Blockchain for the Internet of Vehicles towards Intelligent Transportation Systems: A Survey},
-  author={Mollah, Muhammad Baqer and Zhao, Jun and Niyato, Dusit and Guan, Yong Liang and Yuen, Chau and Sun, Sumei and and Lam, Kwok-Yan and Koh, Leong Hai},
-  journal={arXiv preprint arXiv:2007.06022},
-  year={2020}
-}
 
-</pre>
-                                          </div>
-                                        </div>
-                                      </div>
                                     </div>
 
-                                  </ul>         
-                                  
-                                  
-                -->
-                                  
-                                    </div>
+
 
 
                                     <div>
@@ -441,43 +421,119 @@
                                       </font>
                                     </div>
 
-
                                     <ul align="justify">
 
 
 
-                              
-                                                               
-                                      
+
+                                      <!-- content single -->
                                       <div
                                         style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
-                                        
+                                        <!-- number -->
+                                        <div class="font-weight-bold">[4]</div>
+                                        <!-- content -->
+                                        <div class="pl-3">
+                                          M. B. Mollah, J. Zhao, D. Niyato, Y. L. Guan, C. Yuen, S. Sun, K.-Y. Lam, and L. H. Koh,
+                                          "Blockchain for the Internet of Vehicles towards Intelligent Transportation Systems: A Survey,"
+                                          <i>IEEE Internet of Things Journal</i>, 2020
+                                          </br>
+                                          <a href="https://doi.org/10.1109/JIOT.2020.3028368" target="_blank"
+                                            rel="nofollow">DOI</a>
+                                          &ensp;
+                                          <a href="https://arxiv.org/pdf/2007.06022.pdf" target="_blank"
+                                            rel="nofollow">Arxiv</a>
+                                          &ensp;
+
+                                          <a href="https://www.researchgate.net/publication/344456675_Blockchain_for_the_Internet_of_Vehicles_towards_Intelligent_Transportation_Systems_A_Survey"
+                                            target="_blank" rel="nofollow">PDF</a>
+
+                                          <!-- bibtex pop up start -->
+                                          <!-- Button trigger modal -->
+                                          <a role="button" class="pl-2" data-toggle="modal" href="#bibtex-bciov">bibtex</a>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="bibtex-bciov" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" style="padding: 0px;
+                                              border-radius: 6px;  margin: 30px auto;
+                                              right: 0;
+                                              left: 0;">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h4 class="modal-title">Bibtex</h4>
+                                                  <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <!-- pop up content start -->
+                                                  <pre>
+@article{mollah2020blockchainiov,
+  title={Blockchain for the Internet of Vehicles towards Intelligent Transportation Systems: A Survey},
+  author={Mollah, Muhammad Baqer and Zhao, Jun and Niyato, Dusit and Guan, Yong Liang and Yuen, Chau and Sun, Sumei and and Lam, Kwok-Yan and Koh, Leong Hai},
+  journal={IEEE Internet of Things Journal},
+  year={2020}
+}
+</pre>
+                                                  <!-- pop up content end -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <!-- bibtex pop up end -->
+                                        </div>
+
+                                      </div>
+                                      <!-- content single -->
+
+
+
+
+                                      <!-- content single -->
+                                      <div
+                                        style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
                                         <!-- number -->
                                         <div class="font-weight-bold">[3]</div>
                                         <!-- content -->
                                         <div class="pl-3">
-                                          M.B. Mollah, J. Zhao, D. Niyato, K.Y. Lam, X. Zhang, A.M.Y.M. Ghias, L.H. Koh,
-                                          and L. Yang, "Blockchain for Future Smart Grid: A Comprehensive Survey",
-                                          <i>IEEE Internet of Things Journal</i>, 2020.
+                                          M. B. Mollah, J. Zhao, D. Niyato, K.-Y. Lam, X. Zhang, A. M.Y.M. Ghias, L. H. Koh, and L. Yang,
+                                          "Blockchain for future smart grid: A comprehensive survey," <i>IEEE Internet of Things Journal</i>, 2020
                                           </br>
                                           <a href="https://doi.org/10.1109/JIOT.2020.2993601" target="_blank"
-                                          rel="nofollow">DOI</a>
+                                            rel="nofollow">DOI</a>
                                           &ensp;
                                           <a href="https://arxiv.org/pdf/1911.03298.pdf" target="_blank"
-                                          rel="nofollow">arXiv</a>
+                                            rel="nofollow">Arxiv</a>
                                           &ensp;
-                                          <a href="https://www.researchgate.net/publication/341314698_Blockchain_for_Future_Smart_Grid_A_Comprehensive_Survey_IEEE_Internet_of_Things_Journal"
+                                          
+                                          <a href="https://www.researchgate.net/publication/341314698_Blockchain_for_Future_Smart_Grid_A_Comprehensive_Survey"
                                             target="_blank" rel="nofollow">PDF</a>
-                                          <!-- toggle content -->
-                                          <a class="pl-2" data-toggle="collapse" href="#collapse1" role="button"
-                                            aria-expanded="false">
-                                            bibtex<span><i class="pl-1 fas fa-caret-down"></i></span>
-                                          </a>
 
-                                          <div class="collapse" id="collapse1">
-                                            <div class="card card-body" style="font-family: monaco, monospace; font-size: 1rem; background-color:
-                                            #f5f5f5;border: 1px solid #e3e3e3;">
-                                              <pre class="toggle-text">
+                                          <!-- bibtex pop up start -->
+                                          <!-- Button trigger modal -->
+                                          <a role="button" class="pl-2" data-toggle="modal" href="#bibtex-bcsm">bibtex</a>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="bibtex-bcsm" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" style="padding: 0px;
+                                              border-radius: 6px;  margin: 30px auto;
+                                              right: 0;
+                                              left: 0;">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h4 class="modal-title">Bibtex</h4>
+                                                  <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <!-- pop up content start -->
+                                                  <pre>
 @article{mollah2020blockchain,
   title={Blockchain for Future Smart Grid: A Comprehensive Survey},
   author={Mollah, Muhammad Baqer and Zhao, Jun and Niyato, Dusit and Lam, Kwok-Yan and Zhang, Xin and Ghias, Amer MYM and Koh, Leong Hai and Yang, Lei},
@@ -485,13 +541,20 @@
   year={2020}
 }
 </pre>
+                                                  <!-- pop up content end -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
                                             </div>
                                           </div>
-                                          <!--/ toggle content -->
+                                          <!-- bibtex pop up end -->
                                         </div>
+
                                       </div>
-
-
+                                      <!-- content single -->
 
 
 
@@ -511,17 +574,29 @@
                                           &ensp;
                                           <a href="https://www.researchgate.net/publication/313801429_Security_and_Privacy_Challenges_in_Mobile_Cloud_Computing_Survey_and_Way_Ahead"
                                             target="_blank" rel="nofollow">PDF</a>
-                                          <!-- toggle content -->
-                                          <a class="pl-2" data-toggle="collapse" href="#collapse2" role="button"
-                                            aria-expanded="false">
-                                            bibtex<span><i class="pl-1 fas fa-caret-down"></i></span>
-                                          </a>
 
-                                          <div class="collapse" id="collapse2">
-                                            <div class="card card-body" style="font-family: monaco, monospace; font-size: 1rem; background-color:
-                                            #f5f5f5;border: 1px solid #e3e3e3;">
-                                              <pre class="toggle-text">
-@article{mollah2017security,
+                                          <!-- bibtex pop up start -->
+                                          <!-- Button trigger modal -->
+                                          <a role="button" class="pl-2" data-toggle="modal" href="#bibtex-2">bibtex</a>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="bibtex-2" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" style="padding: 0px;
+                                              border-radius: 6px;  margin: 30px auto;
+                                              right: 0;
+                                              left: 0;">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h4 class="modal-title">Bibtex</h4>
+                                                  <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <!-- pop up content start -->
+                                                  <pre>
+@article-2{mollah2017security,
   title={Security and privacy challenges in mobile cloud computing: Survey and way ahead},
   author={Mollah, Muhammad Baqer and Azad, Md Abul Kalam and Vasilakos, Athanasios},
   journal={Journal of Network and Computer Applications},
@@ -531,24 +606,31 @@
   publisher={Elsevier}
 }
 </pre>
+                                                  <!-- pop up content end -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
                                             </div>
                                           </div>
-                                          <!--/ toggle content -->
+                                          <!-- bibtex pop up end -->
                                         </div>
 
                                       </div>
                                       <!-- content single -->
 
-                                     
-                                    <!-- content single -->
+
+                                      <!-- content single -->
                                       <div
                                         style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
-                                        
-                                        
+
+
                                         <!-- number -->
                                         <div class="font-weight-bold">[1]</div>
                                         <!-- content -->
-                                                                                <div class="pl-3">
+                                        <div class="pl-3">
 
                                           M.B. Mollah, M.A.K. Azad, A. Vasilakos, "Secure Data Sharing and Searching at
                                           the Edge of Cloud-Assisted Internet of Things", <i>IEEE Cloud Computing</i>,
@@ -559,16 +641,27 @@
                                           &ensp;
                                           <a href="https://www.researchgate.net/publication/315174604_Secure_Data_Sharing_and_Searching_at_the_Edge_of_Cloud-Assisted_Internet_of_Things"
                                             target="_blank" rel="nofollow">PDF</a>
-                                          <!-- toggle content -->
-                                          <a class="pl-2" data-toggle="collapse" href="#collapse3" role="button"
-                                            aria-expanded="false">
-                                            bibtex<span><i class="pl-1 fas fa-caret-down"></i></span>
-                                          </a>
-
-                                          <div class="collapse" id="collapse3">
-                                            <div class="card card-body" style="font-family: monaco, monospace; font-size: 1rem; background-color:
-                                            #f5f5f5;border: 1px solid #e3e3e3;">
-                                            <pre class="toggle-text">
+                                          <!-- bibtex pop up start -->
+                                          <!-- Button trigger modal -->
+                                          <a role="button" class="pl-2" data-toggle="modal" href="#bibtex-3">bibtex</a>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="bibtex-3" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" style="padding: 0px;
+                                              border-radius: 6px;  margin: 30px auto;
+                                              right: 0;
+                                              left: 0;">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h4 class="modal-title">Bibtex</h4>
+                                                  <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <!-- pop up content start -->
+                                                  <pre>
 @article{mollah2017secure,
   title={Secure data sharing and searching at the edge of cloud-assisted internet of things},
   author={Mollah, Muhammad Baqer and Azad, Md Abul Kalam and Vasilakos, Athanasios},
@@ -580,57 +673,76 @@
   publisher={IEEE}
 }
 </pre>
+                                                  <!-- pop up content end -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
                                             </div>
                                           </div>
-                                          <!--/ toggle content -->
+                                          <!-- bibtex pop up end -->
                                         </div>
                                       </div>
                                       <!--/ content single -->
-       
-                                      
-                                      
+
+
+
+
+
                                       </li>
                                     </ul>
-
-
                                     <b>Peer Reviewed Book Chapters</b>
                                     </span>
 
-                                 
-                                  
 
-                                  <ul align="justify">
 
-                                    
-                                    <!-- content single -->
-                                    
-                                    <div
-                                      style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
-                                      <!-- number -->
-                                      <div class="font-weight-bold">[1]</div>
-                                      <!-- content -->
-                                      <div class="pl-3">
-                                        M.B. Mollah, S. Zeadally, M.A.K. Azad, "Wireless Technologies for Emerging
-                                        Internet of Things Applications: Opportunities and Challenges", in
-                                        <i>Encyclopedia
-                                          of Wireless Networks</i>, Editors: Prof. Xuemin Shen, Prof. Xiaodong Lin, and
-                                        Prof. Kuan Zhang, Springer, 2019, pp. 1-11.
-                                        </br>
-                                        <a href="https://doi.org/10.1007/978-3-319-32903-1_328-1" target="_blank"
-                                          rel="nofollow">DOI</a>
-                                        &ensp;
-                                        <a href="https://www.researchgate.net/publication/331546068_Emerging_Wireless_Technologies_for_Internet_of_Things_Applications_Opportunities_and_Challenges"
-                                          target="_blank" rel="nofollow">PDF</a>
-                                        <!-- toggle content -->
-                                        <a class="pl-2" data-toggle="collapse" href="#collapse4" role="button"
-                                          aria-expanded="false">
-                                          bibtex<span><i class="pl-1 fas fa-caret-down"></i></span>
-                                        </a>
+                                    <ul align="justify">
 
-                                        <div class="collapse" id="collapse4">
-                                          <div class="card card-body" style="font-family: monaco, monospace; font-size: 1rem; background-color:
-                                            #f5f5f5;border: 1px solid #e3e3e3;">
-                                            <pre class="toggle-text">
+
+
+                                      <!-- content single -->
+
+                                      <div
+                                        style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
+                                        <!-- number -->
+                                        <div class="font-weight-bold">[1]</div>
+                                        <!-- content -->
+                                        <div class="pl-3">
+                                          M.B. Mollah, S. Zeadally, M.A.K. Azad, "Wireless Technologies for Emerging
+                                          Internet of Things Applications: Opportunities and Challenges", in
+                                          <i>Encyclopedia
+                                            of Wireless Networks</i>, Editors: Prof. Xuemin Shen, Prof. Xiaodong Lin,
+                                          and
+                                          Prof. Kuan Zhang, Springer, 2019, pp. 1-11.
+                                          </br>
+                                          <a href="https://doi.org/10.1007/978-3-319-32903-1_328-1" target="_blank"
+                                            rel="nofollow">DOI</a>
+                                          &ensp;
+                                          <a href="https://www.researchgate.net/publication/331546068_Emerging_Wireless_Technologies_for_Internet_of_Things_Applications_Opportunities_and_Challenges"
+                                            target="_blank" rel="nofollow">PDF</a>
+                                          <!-- bibtex pop up start -->
+                                          <!-- Button trigger modal -->
+                                          <a role="button" class="pl-2" data-toggle="modal" href="#bibtex-4">bibtex</a>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="bibtex-4" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" style="padding: 0px;
+                                              border-radius: 6px;  margin: 30px auto;
+                                              right: 0;
+                                              left: 0;">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h4 class="modal-title">Bibtex</h4>
+                                                  <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <!-- pop up content start -->
+                                                  <pre>
 @incollection{mollah2019emerging,
   title={Emerging Wireless Technologies for Internet of Things Applications: Opportunities and Challenges},
   booktitle={Encyclopedia of Wireless Networks},
@@ -640,62 +752,82 @@
   publisher={Springer International Publishing Cham}
 }
 </pre>
+                                                  <!-- pop up content end -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
+                                          <!-- bibtex pop up end -->
                                         </div>
-                                        <!--/ toggle content -->
                                       </div>
+                                      <!--/ content single -->
+
+                                    </ul>
+
+
+
+
+
+
+                                    <div>
+                                      <font color="#0b5394" face="verdana, sans-serif" size="3">
+                                        <span style="line-height:24px">
+
+                                          <b>Conference Proceedings</b>
+                                        </span>
+                                      </font>
                                     </div>
-                                    <!--/ content single -->
 
-                                  </ul>
-
+                                    <ul align="justify">
 
 
-
-
-
-                                  <div>
-                                    <font color="#0b5394" face="verdana, sans-serif" size="3">
-                                      <span style="line-height:24px">
-
-                                        <b>Conference Proceedings</b>
-                                      </span>
-                                    </font>
-                                  </div>
-
-                                  <ul align="justify">
-
-
-                                    <!-- content single -->
-                                    <div
-                                      style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
-                                      <!-- number -->
-                                      <div class="font-weight-bold">[2]</div>
-                                      <!-- content -->
-                                      <div class="pl-3">
-                                        M.B. Mollah, K.R. Islam, S.S. Islam, "Next Generation of Computing through Cloud
-                                        Computing Technology", Proceedings of <i>25th IEEE Annual Canadian Conference on
-                                          Electrical &amp; Computer Engineering</i>, Montreal, Canada, April-May, 2012
-                                        </br>
-                                        <i>(One of the top 100 articles accessed through IEEE Xplore in December 2012
-                                          and March 2013).</i>
-                                        </br>
-                                        <a href="https://doi.org/10.1109/CCECE.2012.6334973" target="_blank"
-                                          rel="nofollow">DOI</a>
-                                        &ensp;
-                                        <a href="https://www.researchgate.net/publication/256517098_Next_Generation_of_Computing_through_Cloud_Computing_Technology"
-                                          target="_blank" rel="nofollow">PDF</a>
-                                        <!-- toggle content -->
-                                        <a class="pl-2" data-toggle="collapse" href="#collapse5" role="button"
-                                          aria-expanded="false">
-                                          bibtex<span><i class="pl-1 fas fa-caret-down"></i></span>
-                                        </a>
-
-                                        <div class="collapse" id="collapse5">
-                                          <div class="card card-body" style="font-family: monaco, monospace; font-size: 1rem; background-color:
-                                            #f5f5f5;border: 1px solid #e3e3e3;">
-                                            <pre class="toggle-text">
-@inproceedings{mollah2012next,
+                                      <!-- content single -->
+                                      <div
+                                        style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
+                                        <!-- number -->
+                                        <div class="font-weight-bold">[2]</div>
+                                        <!-- content -->
+                                        <div class="pl-3">
+                                          M.B. Mollah, K.R. Islam, S.S. Islam, "Next Generation of Computing through
+                                          Cloud
+                                          Computing Technology", Proceedings of <i>25th IEEE Annual Canadian Conference
+                                            on
+                                            Electrical &amp; Computer Engineering</i>, Montreal, Canada, April-May, 2012
+                                          </br>
+                                          <i>(One of the top 100 articles accessed through IEEE Xplore in December 2012
+                                            and March 2013).</i>
+                                          </br>
+                                          <a href="https://doi.org/10.1109/CCECE.2012.6334973" target="_blank"
+                                            rel="nofollow">DOI</a>
+                                          &ensp;
+                                          <a href="https://www.researchgate.net/publication/256517098_Next_Generation_of_Computing_through_Cloud_Computing_Technology"
+                                            target="_blank" rel="nofollow">PDF</a>
+                                          <!-- bibtex pop up start -->
+                                          <!-- Button trigger modal -->
+                                          <a role="button" class="pl-2" data-toggle="modal" href="#bibtex-5">bibtex</a>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="bibtex-5" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" style="padding: 0px;
+                                              border-radius: 6px;  margin: 30px auto;
+                                              right: 0;
+                                              left: 0;">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h4 class="modal-title">Bibtex</h4>
+                                                  <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <!-- pop up content start -->
+                                                  <pre>
+@incollection{mollah2012next,
   title={Next generation of computing through cloud computing technology},
   author={Mollah, Muhammad Baqer and Islam, Kazi Reazul and Islam, Sikder Sunbeam},
   booktitle={2012 25th IEEE Canadian Conference on Electrical and Computer Engineering (CCECE)},
@@ -704,44 +836,62 @@
   organization={IEEE}
 }
 </pre>
+                                                  <!-- pop up content end -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
+                                          <!-- bibtex pop up end -->
+                                          </span>
                                         </div>
-                                        <!--/ toggle content -->
-                                        </span>
                                       </div>
-                                    </div>
-                                    <!--/ content single -->
+                                      <!--/ content single -->
 
 
-                                    <!-- content single -->
-                                    <div
-                                      style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
-                                      <!-- number -->
-                                      <div class="font-weight-bold">[1]</div>
-                                      <!-- content -->
-                                      <div class="pl-3">
-                                        M.B. Mollah, K.R. Islam, S.S. Islam, "E-Police System for Improved
-                                        E-Government
-                                        Services of Developing Countries", Proceedings of <i>25th IEEE Annual Canadian
-                                          Conference on Electrical &amp; Computer Engineering</i>, Montreal, Canada,
-                                        April-May, 2012.
-                                        </br>
-                                        <a href="https://doi.org/10.1109/CCECE.2012.6335057" target="_blank"
-                                          rel="nofollow">DOI</a>
-                                        &ensp;
-                                        <a href="https://www.researchgate.net/publication/256518389_E-Police_System_for_Improved_E-Government_Services_of_Developing_Countries"
-                                          target="_blank" rel="nofollow">PDF</a>
-                                        <!-- toggle content -->
-                                        <a class="pl-2" data-toggle="collapse" href="#collapse6" role="button"
-                                          aria-expanded="false">
-                                          bibtex<span><i class="pl-1 fas fa-caret-down"></i></span>
-                                        </a>
-
-                                        <div class="collapse" id="collapse6">
-                                          <div class="card card-body" style="font-family: monaco, monospace; font-size: 1rem; background-color:
-                                            #f5f5f5;border: 1px solid #e3e3e3;">
-                                            <pre class="toggle-text">
-@inproceedings{mollah2012police,
+                                      <!-- content single -->
+                                      <div
+                                        style="color: #000000; font-family:verdana, sans-serif; font-size: 13px; display: inline-flex;">
+                                        <!-- number -->
+                                        <div class="font-weight-bold">[1]</div>
+                                        <!-- content -->
+                                        <div class="pl-3">
+                                          M.B. Mollah, K.R. Islam, S.S. Islam, "E-Police System for Improved
+                                          E-Government
+                                          Services of Developing Countries", Proceedings of <i>25th IEEE Annual Canadian
+                                            Conference on Electrical &amp; Computer Engineering</i>, Montreal, Canada,
+                                          April-May, 2012.
+                                          </br>
+                                          <a href="https://doi.org/10.1109/CCECE.2012.6335057" target="_blank"
+                                            rel="nofollow">DOI</a>
+                                          &ensp;
+                                          <a href="https://www.researchgate.net/publication/256518389_E-Police_System_for_Improved_E-Government_Services_of_Developing_Countries"
+                                            target="_blank" rel="nofollow">PDF</a>
+                                          <!-- bibtex pop up start -->
+                                          <!-- Button trigger modal -->
+                                          <a role="button" class="pl-2" data-toggle="modal" href="#bibtex-6">bibtex</a>
+                                          <!-- Modal -->
+                                          <div class="modal fade" id="bibtex-6" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" style="padding: 0px;
+                                              border-radius: 6px;  margin: 30px auto;
+                                              right: 0;
+                                              left: 0;">
+                                              <div class="modal-content">
+                                                <div class="modal-header">
+                                                  <h4 class="modal-title">Bibtex</h4>
+                                                  <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                  </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                  <!-- pop up content start -->
+                                                  <pre>
+@incollection{mollah2012police,
   title={E-police system for improved e-government services of developing countries},
   author={Mollah, Muhammad Baqer and Islam, Kazi Reazul and Islam, Sikder Sunbeam},
   booktitle={2012 25th IEEE Canadian Conference on Electrical and Computer Engineering (CCECE)},
@@ -749,48 +899,60 @@
   year={2012},
   organization={IEEE}
 }
+
+
+
 </pre>
+                                                  <!-- pop up content end -->
+                                                </div>
+                                                <div class="modal-footer">
+                                                  <button type="button" class="btn btn-light"
+                                                    data-dismiss="modal">Close</button>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
-                                          
+                                          <!-- bibtex pop up end -->
+
                                         </div>
-                                        <!--/ toggle content -->
                                       </div>
-                                    </div>
-                                  
-                                    <!--/ content single -->
 
-                                  </ul>
+                                      <!--/ content single -->
 
-                                  </li>
+
+                                    </ul>
+
+
+                                    </li>
+                                  </div>
                                 </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
+                    </div>
+
+                    <div id="sites-canvas-bottom-panel">
+                      <div id="sites-attachments-container">
+                      </div>
+                    </div>
+                  </div>
                 </td>
               </tr>
-              </tbody>
             </table>
           </div>
         </div>
-
-        <div id="sites-canvas-bottom-panel">
-          <div id="sites-attachments-container">
+        <div id="sites-chrome-footer-wrapper">
+          <div id="sites-chrome-footer-wrapper-inside">
+            <div id="sites-chrome-footer">
+            </div>
           </div>
         </div>
       </div>
-      </td>
-      </tr>
-      </table>
     </div>
-  </div>
-  <div id="sites-chrome-footer-wrapper">
-    <div id="sites-chrome-footer-wrapper-inside">
-      <div id="sites-chrome-footer">
-      </div>
+    <div id="sites-chrome-adminfooter-container">
     </div>
-  </div>
-  </div>
-  </div>
-  <div id="sites-chrome-adminfooter-container">
-  </div>
   </div>
 
   <div id="sites-chrome-onebar-footer">
